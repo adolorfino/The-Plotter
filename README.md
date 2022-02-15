@@ -1,11 +1,36 @@
-# Lab4
+# The Simplified Cricut
 
-In this lab we built a circuit and attached it to our nucleo in order to record data on the step response for the circuit. The goal was to make sure our code was able to correctly display the step response and get a time constant relatively similar to the calculated time constant for the circuit. Below we have the graph that are code generated and also a graph generated from a simulation done in MATLAB to replicate the same step response. One of the main comparisons between the two is that they both follow the same shape of a first order step response however the one generated for my code only has a range from 2 to 3.1 while the MATLAB has one from 0 to 3.3.
+## Our Proposal
+For our term project we plan to make our own simplified version of a Circut with the end goal of having the machine be able to
+cut paper so we could construct a 3D light box. The cutting would be done by attaching some sort of engraving needle or small dremel
+to a high speed DC motor, the spinning motion of the needle or dremel should provide enough friction to cut through cardstock. The 
+DC motor itself would be attached to an arm controlled by two motors to allow the DC motor to move around a 6x6 area. One motor would 
+act as a pivot point for the arm, allowing it to move in a windshield wiper motion, and the other motor would be attached to a threaded
+rod and control how far the DC motor sits on the arm. The arm would made form aluminum unistruct and be located on the the back left 
+corner of the the 6x6 workspace, stratching to a length of 10 inches so the DC motor mechanism can reach all parts of the the workspace.
 
-![Annotated Graph](/../main/images/annotated_graph.PNG)
+To construct the final 3D light box we need our simplified Circut to cut multiple layers of cardstock according to the images found on this 
+downloadable 3D light box template (https://blog.createandcraft.tv/wp-content/uploads/2019/11/Layered-Bauble-Templates-and-Instructions.pdf).
+Then by using inkspace to translate these images to G-code, as done in this youtube tutorial (https://www.youtube.com/watch?v=bbe56S_O-uI), 
+we should be able to feed our simplified Circut the G-code and cut out the desired images. All that's left to do is take the cut out images 
+and constuct the actual 3D light box by had with some of the leftover cardstock and glue.
 
-![Code](/../main/images/code.PNG)
+## Bill of Materials 
 
-![MATLAB Graph](/../main/images/code_graph.PNG)
+| Qty. | Part                  | Source                | Est. Cost |
+|:----:|:----------------------|:----------------------|:---------:|
+|  2   | Pittperson Gearmotors | ME405 Tub             |     -     |
+|  1   | Nucleo with Shoe      | ME405 Tub             |     -     |
+|  1   | High speed DC motor   | Office Min&trade;     |    ???    |
+|  1   | Solenoid              | ???                   |    ???    |
+|  1   | 3/8" threaded rod     | Home Depot            |   $7.31   |
+|  1   | Aluminum unistrut low profile | Home Depot    |   $6.32   |
+|  1   | Wiring                | ME405 Tub             |     -     |
+|  1   | needle point engraving tip | Amazon           |   $15.00  |
+|  1   | Dremel cutting set    | Walmart               |   $10.98  |
 
-The calculated time constant that we wanted would be equal to the capacitor times the resistor and with a capacitor of 3.3 uF and a resistor of 6k ohm out calculated time constant would be about 0.0198 seconds. However, the calculated time constant that we got from our code was about 0.275 seconds. This means that the type constant generated from our code is about a factor of 10 off however they are fairly similar in number so that I might just be something to do with the fact that our grass starts at two instead of zero.
+## CAD Model
+
+Below a 3D model of our proposed machine.
+
+
