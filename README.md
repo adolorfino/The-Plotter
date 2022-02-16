@@ -32,5 +32,6 @@ and constuct the actual 3D light box by had with some of the leftover cardstock 
 ## CAD Model
 
 Below a 3D model of our proposed machine.
-
+![CAD1](/../main/images/CAD1.PNG)
+![CAD2](/../main/images/CAD2.PNG)
 
