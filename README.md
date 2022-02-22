@@ -22,7 +22,7 @@ and constuct the actual 3D light box by had with some of the leftover cardstock 
 |  2   | Pittperson Gearmotors | ME405 Tub             |     -     |
 |  1   | Nucleo with Shoe      | ME405 Tub             |     -     |
 |  1   | High speed DC motor   | Amazon                |   $6.89   |
-|  1   | Solenoid              | Adafruit              |   $7.50   |
+|  1   | Solenoid              | Adafruit              |   $10.59  |
 |  1   | Diode                 | ME405 Tub             |     -     |
 |  1   | Transitor             | ME405 Tub             |     -     |
 |  1   | Threaded Rod Set      | Amazon                |   $30.39  |
