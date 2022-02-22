@@ -21,17 +21,21 @@ and constuct the actual 3D light box by had with some of the leftover cardstock 
 |:----:|:----------------------|:----------------------|:---------:|
 |  2   | Pittperson Gearmotors | ME405 Tub             |     -     |
 |  1   | Nucleo with Shoe      | ME405 Tub             |     -     |
-|  1   | High speed DC motor   | Office Min&trade;     |    ???    |
-|  1   | Solenoid              | ???                   |    ???    |
-|  1   | 3/8" threaded rod     | Home Depot            |   $7.31   |
-|  1   | Aluminum unistrut low profile | Home Depot    |   $6.32   |
+|  1   | High speed DC motor   | Amazon                |   $6.89   |
+|  1   | Solenoid              | Adafruit              |   $7.50   |
+|  1   | Diode                 | ME405 Tub             |     -     |
+|  1   | Transitor             | ME405 Tub             |     -     |
+|  1   | Threaded Rod Set      | Amazon                |   $30.39  |
+|  1   | Wooden panel          | Leftover scrap wood   |     -     |
 |  1   | Wiring                | ME405 Tub             |     -     |
-|  1   | needle point engraving tip | Amazon           |   $15.00  |
-|  1   | Dremel cutting set    | Walmart               |   $10.98  |
+|  1   | Dremel cutting set    | Amazon                |   $7.18   |
+|  1   | Caster wheel          | Theatre Department    |     -     |
+|  1   | Motor Housing         | 3D print              |     -     |
+|  1   | Screws/Nuts/Bolts     | Mustang 60 Bolt Wall  |     -     |
 
 ## CAD Model
 
-Below a 3D model of our proposed machine.
+Below are pictures of the 3D model of our proposed machine.
 ![CAD1](/../main/images/CAD1.PNG)
 ![CAD2](/../main/images/CAD2.PNG)
 
