@@ -7,9 +7,9 @@ At the end of the term our team developed a Whiteboard Plotter to translate HPGL
 Majority of our plotter ws made from scraps found in the Mechatronic Lab or already in our ME405 Tub. The main outliers were the two motor connecters we 3D printed and the threaded rod set we bought from amazon. We have a more detailed breakdown our our materials in the "Bill of Material" section of the README below. Additionally, we added the CAD model references from which we built our final hardwar from in the "CAD Model" section of the report.
 
 Here are images of our final hardware design:
-![Final1](/../main/images/Final1.PNG)
-![Final2](/../main/images/Final2.PNG)
-![Final3](/../main/images/Final3.PNG)
+![Final1](/../main/images/Final1.jpg)
+![Final2](/../main/images/Final2.jpg)
+![Final3](/../main/images/Final3.jpg)
 
 As seen from the images we have two motors controlling the movement of the plotter. One is located closer to the axis of the plotter and is connected to the threaded rod carrying the pen. When that motor moves it adjusts how far the pen is related to the axis, the r value coordinate. The other motor is located at the end of the arm of the plotter and attached to a wheel. This motor is responsible for adjusting the theta value of the plotter. Each set of the r and theta values for a given coordinate is communicated through a Nucleo attached to the back of the plotter's arm. The Nucleo tells the two motors how much each of them are supposed to move and in what direction to reach the next coordinates; meausurements are converted from inches to ticks on the encoder. As the two motors adjust to the set r and theta values the pen carriers moves and draws on the whiteboard to plot the image.
 
