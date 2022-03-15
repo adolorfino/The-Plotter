@@ -32,6 +32,6 @@ Below are pictures of the 3D model of our proposed machine.
 ## Software Design
 
 ## Project Results
-
+A video of our plotter drawing a figure 8 can be seen [here.](https://youtube.com/shorts/5B91q9ULuf0?feature=share)
 ## Takeaways 
 
