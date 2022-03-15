@@ -7,6 +7,7 @@ At the end of the term our team developed a Whiteboard Plotter to translate HPGL
 Majority of our plotter ws made from scraps found in the Mechatronic Lab or already in our ME405 Tub. The main outliers were the two motor connecters we 3D printed and the threaded rod set we bought from amazon. We have a more detailed breakdown our our materials in the "Bill of Material" section of the README below. Additionally, we added the CAD model references from which we built our final hardwar from in the "CAD Model" section of the report.
 
 Here are images of our final hardware design:
+
 ![Final1](/../main/images/Final1.jpg)
 ![Final2](/../main/images/Final2.jpg)
 ![Final3](/../main/images/Final3.jpg)
@@ -32,6 +33,7 @@ As seen from the images we have two motors controlling the movement of the plott
 ## CAD Model
 
 Below are pictures of the 3D model of our proposed machine.
+
 ![CAD1](/../main/images/CAD1.PNG)
 ![CAD2](/../main/images/CAD2.PNG)
 
