@@ -1,19 +1,11 @@
-# The Simplified Cricut
+# The Whiteboard Plotter
 
-## Our Proposal
-For our term project we plan to make our own simplified version of a Circut with the end goal of having the machine be able to
-cut paper so we could construct a 3D light box. The cutting would be done by attaching some sort of engraving needle or small dremel
-to a high speed DC motor, the spinning motion of the needle or dremel should provide enough friction to cut through cardstock. The 
-DC motor itself would be attached to an arm controlled by two motors to allow the DC motor to move around a 6x6 area. One motor would 
-act as a pivot point for the arm, allowing it to move in a windshield wiper motion, and the other motor would be attached to a threaded
-rod and control how far the DC motor sits on the arm. The arm would made form aluminum unistruct and be located on the the back left 
-corner of the the 6x6 workspace, stratching to a length of 10 inches so the DC motor mechanism can reach all parts of the the workspace.
+## Our Project
+At the end of the term our team developed a Whiteboard Plotter to translate HPGL files into physical drawings on a whiteboard. The goal was to be able to hand draw a single line image using inkspace and then be able to use our plotter to draw a similar image on the whiteboard. With out final design we were able to sucessfully plot a handful of images. The purpose of our device was to be a simple plotter that almost anyone in our class could operate. We wanted our plotter to be something easy for a person with limited knowledgable in mechatronics to understand. Based on our hardware and software design a person would first set our plotter in it's starting position: as far clockwise on the whiteboard the pen would got and with the pen carrier closest to the main axial. Then the user can draw a single line image in inkspace. They would save the drawing's coordinates as a text file which they would enter in line 198 in the main file of our software. All that's left is to run the main file and then turn on power to the plotter and the image should be drawn on the whiteboard.
 
-To construct the final 3D light box we need our simplified Circut to cut multiple layers of cardstock according to the images found on this 
-downloadable 3D light box template (https://blog.createandcraft.tv/wp-content/uploads/2019/11/Layered-Bauble-Templates-and-Instructions.pdf).
-Then by using inkspace to translate these images to G-code, as done in this youtube tutorial (https://www.youtube.com/watch?v=bbe56S_O-uI), 
-we should be able to feed our simplified Circut the G-code and cut out the desired images. All that's left to do is take the cut out images 
-and constuct the actual 3D light box by had with some of the leftover cardstock and glue.
+## Hardware Design
+Majority of our plotter ws made from scraps found in the Mechatronic Lab or already in our ME405 Tub. The main outliers were the two motor connecters we 3D printed and the threaded rod set we bought from amazon. We have a more detailed breakdown our our materials in the "Bill of Material" section of the README below. Additionally, we added the CAD model references from which we built our final hardwar from in the "CAD Model" section of the report.
+
 
 ## Bill of Materials 
 
@@ -21,16 +13,14 @@ and constuct the actual 3D light box by had with some of the leftover cardstock 
 |:----:|:----------------------|:----------------------|:---------:|
 |  2   | Pittperson Gearmotors | ME405 Tub             |     -     |
 |  1   | Nucleo with Shoe      | ME405 Tub             |     -     |
-|  1   | High speed DC motor   | Amazon                |   $6.89   |
-|  1   | Solenoid              | Adafruit              |   $10.59  |
-|  1   | Diode                 | ME405 Tub             |     -     |
-|  1   | Transitor             | ME405 Tub             |     -     |
+|  1   | Whiteboard            | ME405 Classroom       |     -     |
+|  1   | Expo Marker           | Pencil Case           |     -     |
 |  1   | Threaded Rod Set      | Amazon                |   $30.39  |
 |  1   | Wooden panel          | Leftover scrap wood   |     -     |
 |  1   | Wiring                | ME405 Tub             |     -     |
 |  1   | Dremel cutting set    | Amazon                |   $7.18   |
 |  1   | Caster wheel          | Theatre Department    |     -     |
-|  1   | Motor Housing         | 3D print              |     -     |
+|  2   | Motor Connectors      | 3D print              |     -     |
 |  1   | Screws/Nuts/Bolts     | Mustang 60 Bolt Wall  |     -     |
 
 ## CAD Model
@@ -38,4 +28,10 @@ and constuct the actual 3D light box by had with some of the leftover cardstock 
 Below are pictures of the 3D model of our proposed machine.
 ![CAD1](/../main/images/CAD1.PNG)
 ![CAD2](/../main/images/CAD2.PNG)
+
+## Software Design
+
+## Project Results
+
+## Takeaways 
 
