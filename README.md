@@ -41,7 +41,7 @@ Below are pictures of the 3D model of our proposed machine.
 Since the plotter works in the polar plane instead of the ploter plane we needed to convert the given x and y values from our HPGL file to r and theta values. To do that was needed to separate each x-y coordinate pair and put them in a list to be converted into a new list of r and theta coordinates. Then our code would feed each coordinate pair to our plotter so it could adjust it's postitioning. Once the flags were triggered to tell our code that the correct r and theta values were reached, our code would send the next coordinate until it was done with the list. A more detail explanation of our code can be found on our Doxygen page [here.]()
 
 ## Project Results
-A video of our plotter drawing a figure 8 can be seen [here.](https://youtube.com/shorts/5B91q9ULuf0?feature=share)
+A video of our plotter drawing a figure 8 can be seen [here.](https://www.youtube.com/watch?v=7yewA3ieIB4)
 
 From the video one can see our plotter draws the shape of the figure 8 quite well. While the figure 8 image plots successfully our plotter our team had difficultly plotting more complex shapes. For example, when we attempted to draw a single-line dachshund only some parts of the dog were recognizeable. We beieve this was from our conversion calculations from cartiesan to polar not being perfect conversions. This was most likely from an offset in the plotter's arm from the rotating axial. We were unsure how to correct for the the offset but sill were able to produce some of the images correctly.
 
