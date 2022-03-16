@@ -12,6 +12,12 @@
                         A video of the plotter's function can be found [here].
                         
                         [here]: https://www.youtube.com/watch?v=7yewA3ieIB4       "here"
+			
+			Task Diagram:
+			![Task Diagram](../resources/tasks_diagram.PNG)
+
+			State Diagram:
+			![State Diagram](../resources/state_diagram.PNG)
 
    @section sec_mot     Motor Driver
                         Some information about the motor driver with links.
