@@ -38,7 +38,12 @@ Below are pictures of the 3D model of our proposed machine.
 ![CAD2](/../main/images/CAD2.PNG)
 
 ## Software Design
-Since the plotter works in the polar plane instead of the ploter plane we needed to convert the given x and y values from our HPGL file to r and theta values. To do that was needed to separate each x-y coordinate pair and put them in a list to be converted into a new list of r and theta coordinates. Then our code would feed each coordinate pair to our plotter so it could adjust it's postitioning. Once the flags were triggered to tell our code that the correct r and theta values were reached, our code would send the next coordinate until it was done with the list. A more detail explanation of our code can be found on our Doxygen page [here.](file:///C:/Users/adolo/OneDrive/Documents/ME%20405/Term%20Project/docs/html/index.html)
+Since the plotter works in the polar plane instead of the ploter plane we needed to convert the given x and y values from our HPGL file to r and theta values. To do that was needed to separate each x-y coordinate pair and put them in a list to be converted into a new list of r and theta coordinates. Then our code would feed each coordinate pair to our plotter so it could adjust it's postitioning. Once the flags were triggered to tell our code that the correct r and theta values were reached, our code would send the next coordinate until it was done with the list. A more detail explanation of our code can be found on our Doxygen page [here.](https://adolorfino.github.io/The-Plotter/)
+
+Task Diagram:
+![Task Diagram](/../main/images/tasks_diagram.jpg)
+State Diagram:
+![State Diagram](/../main/images/state_diagram.jpg)
 
 ## Project Results
 A video of our plotter drawing a figure 8 can be seen [here.](https://www.youtube.com/watch?v=7yewA3ieIB4)

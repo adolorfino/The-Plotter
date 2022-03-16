@@ -15,9 +15,11 @@
 			
 			Task Diagram:
 			![Task Diagram](../resources/tasks_diagram.PNG)
+			\image html tasks_diagram.png
 
 			State Diagram:
 			![State Diagram](../resources/state_diagram.PNG)
+			\image html state_diagram.png
 
    @section sec_mot     Motor Driver
                         Some information about the motor driver with links.
