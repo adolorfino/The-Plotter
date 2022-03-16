@@ -1,0 +1,54 @@
+\hypertarget{encoder_8py}{}\doxysection{src/encoder.py File Reference}
+\label{encoder_8py}\index{src/encoder.py@{src/encoder.py}}
+
+
+This file interacts directly with the hardware of the Nucleo to read motor encoders and return information as called.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classencoder_1_1_encoder}{encoder.\+Encoder}}
+\begin{DoxyCompactList}\small\item\em Interface with quadrature encoders. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{encoder_8py_a79a0ec6c5cd83647dba8155485d65aa2}\label{encoder_8py_a79a0ec6c5cd83647dba8155485d65aa2}} 
+{\bfseries encoder.\+e\+\_\+pin\+\_\+1} = pyb.\+Pin.\+cpu.\+C6
+\item 
+\mbox{\Hypertarget{encoder_8py_adb8f4fde14346ee67c9ccc6eb215279e}\label{encoder_8py_adb8f4fde14346ee67c9ccc6eb215279e}} 
+{\bfseries encoder.\+e\+\_\+pin\+\_\+2} = pyb.\+Pin.\+cpu.\+C7
+\item 
+\mbox{\Hypertarget{encoder_8py_ad79dd061442c6d7a68e6eb9b42c1d046}\label{encoder_8py_ad79dd061442c6d7a68e6eb9b42c1d046}} 
+int {\bfseries encoder.\+e\+\_\+channel} = 8
+\item 
+\mbox{\Hypertarget{encoder_8py_a0476aed94248017cc21223037b4c0d63}\label{encoder_8py_a0476aed94248017cc21223037b4c0d63}} 
+{\bfseries encoder.\+enc\+\_\+1} = Encoder(e\+\_\+channel, e\+\_\+pin\+\_\+1, e\+\_\+pin\+\_\+2)
+\item 
+\mbox{\Hypertarget{encoder_8py_a1406884d1b035bc46e64dbddaa8f56b5}\label{encoder_8py_a1406884d1b035bc46e64dbddaa8f56b5}} 
+{\bfseries encoder.\+e\+\_\+2} = pyb.\+Pin.\+cpu.\+B6
+\item 
+\mbox{\Hypertarget{encoder_8py_acee85cd217f638570405c6331eeb5e14}\label{encoder_8py_acee85cd217f638570405c6331eeb5e14}} 
+{\bfseries encoder.\+e\+\_\+21} = pyb.\+Pin.\+cpu.\+B7
+\item 
+\mbox{\Hypertarget{encoder_8py_a3b9605cc557b4128446d546630d1f284}\label{encoder_8py_a3b9605cc557b4128446d546630d1f284}} 
+int {\bfseries encoder.\+enc\+\_\+c\+\_\+2} = 4
+\item 
+\mbox{\Hypertarget{encoder_8py_a9c2b81ccff3fbd737ef4f69b088ecca3}\label{encoder_8py_a9c2b81ccff3fbd737ef4f69b088ecca3}} 
+{\bfseries encoder.\+enc\+\_\+2} = Encoder(enc\+\_\+c\+\_\+2, e\+\_\+2, e\+\_\+21)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file interacts directly with the hardware of the Nucleo to read motor encoders and return information as called. 
+
+\begin{DoxyAuthor}{Author}
+Aleya Dolorfino 
+
+Chloe Chou 
+
+Christian Roberts 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 8, 2022 
+\end{DoxyDate}

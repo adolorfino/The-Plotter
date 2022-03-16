@@ -1,0 +1,29 @@
+\hypertarget{_closed_loop_v_c_8py}{}\doxysection{src/\+Closed\+Loop\+VC.py File Reference}
+\label{_closed_loop_v_c_8py}\index{src/ClosedLoopVC.py@{src/ClosedLoopVC.py}}
+
+
+A closed loop controller with both position and velocity controls.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop}{Closed\+Loop\+VC.\+Closed\+Loop}}
+\begin{DoxyCompactList}\small\item\em Closed-\/loop controller class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A closed loop controller with both position and velocity controls. 
+
+The motor takes the location and specified setpoint of the motor and uses that information to calculate a duty cycle appropriately using a proportional gain. The velocity controller is used until the velocity controller reaches a set threshold, then switches to position for an accurate location.
+
+\begin{DoxyAuthor}{Author}
+Aleya Dolorfino 
+
+Chloe Chou 
+
+Christian Roberts 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022-\/Mar-\/15 
+\end{DoxyDate}

@@ -1,0 +1,45 @@
+\hypertarget{motor__driver_8py}{}\doxysection{src/motor\+\_\+driver.py File Reference}
+\label{motor__driver_8py}\index{src/motor\_driver.py@{src/motor\_driver.py}}
+
+
+This file is a task that creates motor objects and runs them when called in the main file of the lab.  
+
+
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classmotor__driver_1_1_motor_driver}{motor\+\_\+driver.\+Motor\+Driver}}
+\begin{DoxyCompactList}\small\item\em This class will drive a motor from the ME 405 kit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{motor__driver_8py_a42cc5d848826c79eeab52f3b7315b9c1}\label{motor__driver_8py_a42cc5d848826c79eeab52f3b7315b9c1}} 
+{\bfseries motor\+\_\+driver.\+pin1} = pyb.\+Pin.\+board.\+PB4
+\item 
+\mbox{\Hypertarget{motor__driver_8py_aca557b0817562f64d792326ad1ee5f22}\label{motor__driver_8py_aca557b0817562f64d792326ad1ee5f22}} 
+{\bfseries motor\+\_\+driver.\+pin2} = pyb.\+Pin.\+board.\+PB5
+\item 
+\mbox{\Hypertarget{motor__driver_8py_afc92dcd0c554abcbc82ce726dc48ac9d}\label{motor__driver_8py_afc92dcd0c554abcbc82ce726dc48ac9d}} 
+{\bfseries motor\+\_\+driver.\+pin\+\_\+enable} = pyb.\+Pin.\+board.\+PA10
+\item 
+\mbox{\Hypertarget{motor__driver_8py_afe7b7e2d645938364816150c4bccc1f3}\label{motor__driver_8py_afe7b7e2d645938364816150c4bccc1f3}} 
+{\bfseries motor\+\_\+driver.\+timer} = pyb.\+Timer(3, freq = 20000)
+\item 
+\mbox{\Hypertarget{motor__driver_8py_a99f8817afc0acd09fc7a997bfc1adc36}\label{motor__driver_8py_a99f8817afc0acd09fc7a997bfc1adc36}} 
+{\bfseries motor\+\_\+driver.\+moe} = Motor\+Driver(pin\+\_\+enable, pin1, pin2, timer)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is a task that creates motor objects and runs them when called in the main file of the lab. 
+
+\begin{DoxyAuthor}{Author}
+Aleya Dolorfino 
+
+Chloe Chou 
+
+Christian Roberts 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+March 8, 2022 
+\end{DoxyDate}

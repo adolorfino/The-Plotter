@@ -1,0 +1,199 @@
+\hypertarget{class_closed_loop_v_c_1_1_closed_loop}{}\doxysection{Closed\+Loop\+VC.\+Closed\+Loop Class Reference}
+\label{class_closed_loop_v_c_1_1_closed_loop}\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+
+
+Closed-\/loop controller class.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop_a2e1ca191462bf56da2b33d4b1becc43b}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, location, setpoint, vpoint, velocity, kp, kv)
+\begin{DoxyCompactList}\small\item\em Object contructor for Closed Loop class. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop_a0359ae4f71ddacd07788d3701e20534f}{run}} (self, position, velocity)
+\begin{DoxyCompactList}\small\item\em Runs controller function. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop_ad34d0079cee1e832e4ce363bf2047c0a}{get\+\_\+\+Kp}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the Kp value assigned to the closed loop. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop_a37940b643eb87c47381031c249beee40}{set\+\_\+\+Kp}} (self, kp)
+\begin{DoxyCompactList}\small\item\em Changes the input Kp value. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop_a681318463670035c5a3ba38c574187e8}{get\+\_\+setpoint}} (self)
+\begin{DoxyCompactList}\small\item\em Returns the setpoint value assigned to the closed loop. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop_a66c7751225d6853e5e4f8c7444879e16}{set\+\_\+setpoint}} (self, setpoint)
+\begin{DoxyCompactList}\small\item\em Changes the input setpoint value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a5834b6e6f5efe418f39edea0ab478ef6}\label{class_closed_loop_v_c_1_1_closed_loop_a5834b6e6f5efe418f39edea0ab478ef6}} 
+def {\bfseries set\+\_\+location} (self, location)
+\begin{DoxyCompactList}\small\item\em Changes the location for the closed loop to calculate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a933fa19e9250e40d5569de59fdeb62e2}\label{class_closed_loop_v_c_1_1_closed_loop_a933fa19e9250e40d5569de59fdeb62e2}} 
+def {\bfseries set\+\_\+vpoint} (self, vpoint)
+\begin{DoxyCompactList}\small\item\em Changes the velocity limit for the controller. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop_aab65caf13a9a34d147dcebb5aa606d92}{switch\+\_\+state}} (self)
+\begin{DoxyCompactList}\small\item\em Sets the control scheme to dominate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a7210b4c9fb4a84115e77cad511455b04}\label{class_closed_loop_v_c_1_1_closed_loop_a7210b4c9fb4a84115e77cad511455b04}} 
+{\bfseries setpoint}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_acaa20fc44b2456ddf57958f4f6fa3a20}\label{class_closed_loop_v_c_1_1_closed_loop_acaa20fc44b2456ddf57958f4f6fa3a20}} 
+{\bfseries location}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a4e3c11535a31a7c13168d765c2e1e6b1}\label{class_closed_loop_v_c_1_1_closed_loop_a4e3c11535a31a7c13168d765c2e1e6b1}} 
+{\bfseries kp}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_ae19b3b086aaee7a81c59d307c38802e7}\label{class_closed_loop_v_c_1_1_closed_loop_ae19b3b086aaee7a81c59d307c38802e7}} 
+{\bfseries error}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a65346a7bf8c20f2a5cbc92943d01af2f}\label{class_closed_loop_v_c_1_1_closed_loop_a65346a7bf8c20f2a5cbc92943d01af2f}} 
+{\bfseries vpoint}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a7134d2d33a8a7846218b52c47d9134a3}\label{class_closed_loop_v_c_1_1_closed_loop_a7134d2d33a8a7846218b52c47d9134a3}} 
+{\bfseries velocity}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_ac4962c7f4e98225afe3e25b298783663}\label{class_closed_loop_v_c_1_1_closed_loop_ac4962c7f4e98225afe3e25b298783663}} 
+{\bfseries v\+\_\+error}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_abc2a452c0c6078522533dfbf3fe80c04}\label{class_closed_loop_v_c_1_1_closed_loop_abc2a452c0c6078522533dfbf3fe80c04}} 
+{\bfseries state}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_ab415ff29dbdc5d275a98326dc8e174b6}\label{class_closed_loop_v_c_1_1_closed_loop_ab415ff29dbdc5d275a98326dc8e174b6}} 
+{\bfseries kv}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a7f51b0eca338074a8209813e2e872099}\label{class_closed_loop_v_c_1_1_closed_loop_a7f51b0eca338074a8209813e2e872099}} 
+{\bfseries printout}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a815fd42452b740a8bf007f0ac9887ece}\label{class_closed_loop_v_c_1_1_closed_loop_a815fd42452b740a8bf007f0ac9887ece}} 
+{\bfseries times}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a964f540eabf631228d814a19bec6a54d}\label{class_closed_loop_v_c_1_1_closed_loop_a964f540eabf631228d814a19bec6a54d}} 
+{\bfseries duty}
+\item 
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a4f64776eb59507de490296364e261123}\label{class_closed_loop_v_c_1_1_closed_loop_a4f64776eb59507de490296364e261123}} 
+{\bfseries position}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Closed-\/loop controller class. 
+
+Closed loop controller class to control the speed of the motor 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a2e1ca191462bf56da2b33d4b1becc43b}\label{class_closed_loop_v_c_1_1_closed_loop_a2e1ca191462bf56da2b33d4b1becc43b}} 
+\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def Closed\+Loop\+VC.\+Closed\+Loop.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{location,  }\item[{}]{setpoint,  }\item[{}]{vpoint,  }\item[{}]{velocity,  }\item[{}]{kp,  }\item[{}]{kv }\end{DoxyParamCaption})}
+
+
+
+Object contructor for Closed Loop class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & This parameter defines the current location of the encoder. \\
+\hline
+{\em setpoint} & This parameter defines the set location to acheive. \\
+\hline
+{\em vpoint} & This parameter defines the target velocity of the motor. \\
+\hline
+{\em velocity} & This parameter defines the current velocity of the motor. \\
+\hline
+{\em kp} & This is the proportional gain constant for the positional control. \\
+\hline
+{\em kv} & This is the proportional gain constant for the velocity control. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_ad34d0079cee1e832e4ce363bf2047c0a}\label{class_closed_loop_v_c_1_1_closed_loop_ad34d0079cee1e832e4ce363bf2047c0a}} 
+\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}!get\_Kp@{get\_Kp}}
+\index{get\_Kp@{get\_Kp}!ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_Kp()}{get\_Kp()}}
+{\footnotesize\ttfamily def Closed\+Loop\+VC.\+Closed\+Loop.\+get\+\_\+\+Kp (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the Kp value assigned to the closed loop. 
+
+\begin{DoxyReturn}{Returns}
+Kp value. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a681318463670035c5a3ba38c574187e8}\label{class_closed_loop_v_c_1_1_closed_loop_a681318463670035c5a3ba38c574187e8}} 
+\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}!get\_setpoint@{get\_setpoint}}
+\index{get\_setpoint@{get\_setpoint}!ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{get\_setpoint()}{get\_setpoint()}}
+{\footnotesize\ttfamily def Closed\+Loop\+VC.\+Closed\+Loop.\+get\+\_\+setpoint (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns the setpoint value assigned to the closed loop. 
+
+\begin{DoxyReturn}{Returns}
+The current setpoint of the controller. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a0359ae4f71ddacd07788d3701e20534f}\label{class_closed_loop_v_c_1_1_closed_loop_a0359ae4f71ddacd07788d3701e20534f}} 
+\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}!run@{run}}
+\index{run@{run}!ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def Closed\+Loop\+VC.\+Closed\+Loop.\+run (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{position,  }\item[{}]{velocity }\end{DoxyParamCaption})}
+
+
+
+Runs controller function. 
+
+The function runs the closedloop feedback system. The system determines whether it is in the velocity regime or the positional regime, and applies a closed loop control equation to determine a new duty cycle. The velocity regime dominates until the motor is within 1000ticks of the target location, at which point the positional regime takes over and calculates a new duty cycle. If the new calculated duty is below -\/100 or above 100 then the duty is set to the maximum duty of either -\/100 or 100. \begin{DoxyReturn}{Returns}
+duty This function returns the new calculated duty cycle for the DC motor. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em position} & A floating point value containing the position of the motor. This is calculated from the Encoder class. \\
+\hline
+{\em velocity} & A floating point value containing the velocity of the motor. This is calculated using the Encoder class. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a37940b643eb87c47381031c249beee40}\label{class_closed_loop_v_c_1_1_closed_loop_a37940b643eb87c47381031c249beee40}} 
+\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}!set\_Kp@{set\_Kp}}
+\index{set\_Kp@{set\_Kp}!ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_Kp()}{set\_Kp()}}
+{\footnotesize\ttfamily def Closed\+Loop\+VC.\+Closed\+Loop.\+set\+\_\+\+Kp (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{kp }\end{DoxyParamCaption})}
+
+
+
+Changes the input Kp value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kp} & The new proportional gain to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_a66c7751225d6853e5e4f8c7444879e16}\label{class_closed_loop_v_c_1_1_closed_loop_a66c7751225d6853e5e4f8c7444879e16}} 
+\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}!set\_setpoint@{set\_setpoint}}
+\index{set\_setpoint@{set\_setpoint}!ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{set\_setpoint()}{set\_setpoint()}}
+{\footnotesize\ttfamily def Closed\+Loop\+VC.\+Closed\+Loop.\+set\+\_\+setpoint (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{setpoint }\end{DoxyParamCaption})}
+
+
+
+Changes the input setpoint value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em setpoint} & The new setpoint to set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_closed_loop_v_c_1_1_closed_loop_aab65caf13a9a34d147dcebb5aa606d92}\label{class_closed_loop_v_c_1_1_closed_loop_aab65caf13a9a34d147dcebb5aa606d92}} 
+\index{ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}!switch\_state@{switch\_state}}
+\index{switch\_state@{switch\_state}!ClosedLoopVC.ClosedLoop@{ClosedLoopVC.ClosedLoop}}
+\doxysubsubsection{\texorpdfstring{switch\_state()}{switch\_state()}}
+{\footnotesize\ttfamily def Closed\+Loop\+VC.\+Closed\+Loop.\+switch\+\_\+state (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Sets the control scheme to dominate. 
+
+A debugging tool to manually change the regime of the controller. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_closed_loop_v_c_8py}{Closed\+Loop\+VC.\+py}}\end{DoxyCompactItemize}

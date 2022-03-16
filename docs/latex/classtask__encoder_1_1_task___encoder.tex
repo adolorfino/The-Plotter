@@ -1,0 +1,78 @@
+\hypertarget{classtask__encoder_1_1_task___encoder}{}\doxysection{task\+\_\+encoder.\+Task\+\_\+\+Encoder Class Reference}
+\label{classtask__encoder_1_1_task___encoder}\index{task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}}
+
+
+A standard variable for assigning tasks to encoder.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classtask__encoder_1_1_task___encoder_abeac692e4c07f958b7be4e20406a5c61}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, period, tim\+Num, enc\+\_\+pos, delta\+\_\+pos, enc\+\_\+zero, pin1, pin2)
+\begin{DoxyCompactList}\small\item\em Constructs shared variables. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classtask__encoder_1_1_task___encoder_a06de61eda693f738f2ad0d3df39eb80e}{run}} (self)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_ab2b16a59827172cd16b6cfb1182fa781}\label{classtask__encoder_1_1_task___encoder_ab2b16a59827172cd16b6cfb1182fa781}} 
+{\bfseries enc\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_afe502c29b5fbef69b7f14f2ca79416bf}\label{classtask__encoder_1_1_task___encoder_afe502c29b5fbef69b7f14f2ca79416bf}} 
+{\bfseries delta\+\_\+pos}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_a996a3c818119d9351e49e8b196b0ed25}\label{classtask__encoder_1_1_task___encoder_a996a3c818119d9351e49e8b196b0ed25}} 
+{\bfseries enc\+\_\+zero}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_ae9c95f833557e3df0980126f6af2512f}\label{classtask__encoder_1_1_task___encoder_ae9c95f833557e3df0980126f6af2512f}} 
+{\bfseries period}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_af76d78ac813dae45f04b764167da08b8}\label{classtask__encoder_1_1_task___encoder_af76d78ac813dae45f04b764167da08b8}} 
+{\bfseries next\+\_\+time}
+\item 
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_a4d6692f8d0a99aec8c782f60d6046c2d}\label{classtask__encoder_1_1_task___encoder_a4d6692f8d0a99aec8c782f60d6046c2d}} 
+{\bfseries encode}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A standard variable for assigning tasks to encoder. 
+
+Tasked can be assigned from the main script. Position, delta, and time can be updated and returned depending on the task assigned. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_abeac692e4c07f958b7be4e20406a5c61}\label{classtask__encoder_1_1_task___encoder_abeac692e4c07f958b7be4e20406a5c61}} 
+\index{task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def task\+\_\+encoder.\+Task\+\_\+\+Encoder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{period,  }\item[{}]{tim\+Num,  }\item[{}]{enc\+\_\+pos,  }\item[{}]{delta\+\_\+pos,  }\item[{}]{enc\+\_\+zero,  }\item[{}]{pin1,  }\item[{}]{pin2 }\end{DoxyParamCaption})}
+
+
+
+Constructs shared variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tim\+Num} & is the channel number corresponding to the encoder doing the task period controls the frequency at which the encoder returns data enc\+\_\+pos Returns the encoder position delta\+\_\+pos returns the delta of the encoder over a period enc\+\_\+zero Zeros the encoder postion using a datum value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtask__encoder_1_1_task___encoder_a06de61eda693f738f2ad0d3df39eb80e}\label{classtask__encoder_1_1_task___encoder_a06de61eda693f738f2ad0d3df39eb80e}} 
+\index{task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}!run@{run}}
+\index{run@{run}!task\_encoder.Task\_Encoder@{task\_encoder.Task\_Encoder}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily def task\+\_\+encoder.\+Task\+\_\+\+Encoder.\+run (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Runs and called for the defined functions in the encoder. 
+@details Checks if a period has passed, if it has then the encoded is updated 
+        if new position, delta, and timer values. 
+Returns
+-------
+None.\end{DoxyVerb}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{task__encoder_8py}{task\+\_\+encoder.\+py}}\end{DoxyCompactItemize}

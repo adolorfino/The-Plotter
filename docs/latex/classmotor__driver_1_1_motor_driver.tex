@@ -1,0 +1,85 @@
+\hypertarget{classmotor__driver_1_1_motor_driver}{}\doxysection{motor\+\_\+driver.\+Motor\+Driver Class Reference}
+\label{classmotor__driver_1_1_motor_driver}\index{motor\_driver.MotorDriver@{motor\_driver.MotorDriver}}
+
+
+This class will drive a motor from the ME 405 kit.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classmotor__driver_1_1_motor_driver_afa74bf763af06f56c638fab4c2a34070}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, enable\+\_\+pin, in1pin, in2pin, timer)
+\begin{DoxyCompactList}\small\item\em Creates a motor driver by initializing GPIO pins and turns the motor off for safety. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classmotor__driver_1_1_motor_driver_acb0425b4bb5e1bf751c45bc785165f69}{set\+\_\+pwm}} (self, duty\+\_\+cycle)
+\begin{DoxyCompactList}\small\item\em Sets the duty cycle and direction of the motor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_ad27100d6f48e7fe36e352df8dde95b20}\label{classmotor__driver_1_1_motor_driver_ad27100d6f48e7fe36e352df8dde95b20}} 
+{\bfseries pin1}
+\item 
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_a04b668174274a6c8a3d077d60f33f0c9}\label{classmotor__driver_1_1_motor_driver_a04b668174274a6c8a3d077d60f33f0c9}} 
+{\bfseries pin2}
+\item 
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_afea975fac937adb9144798bebc8ea075}\label{classmotor__driver_1_1_motor_driver_afea975fac937adb9144798bebc8ea075}} 
+{\bfseries pin\+\_\+enable}
+\item 
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_a31f94ee1d08272cb38ac079d9db29c37}\label{classmotor__driver_1_1_motor_driver_a31f94ee1d08272cb38ac079d9db29c37}} 
+{\bfseries tim}
+\item 
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_ab496f8f738f7741e9abe99533bb6e9cf}\label{classmotor__driver_1_1_motor_driver_ab496f8f738f7741e9abe99533bb6e9cf}} 
+{\bfseries tim\+\_\+chan1}
+\item 
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_ab84aeb45e6ddc383183461f72f2f33a5}\label{classmotor__driver_1_1_motor_driver_ab84aeb45e6ddc383183461f72f2f33a5}} 
+{\bfseries tim\+\_\+chan2}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class will drive a motor from the ME 405 kit. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_afa74bf763af06f56c638fab4c2a34070}\label{classmotor__driver_1_1_motor_driver_afa74bf763af06f56c638fab4c2a34070}} 
+\index{motor\_driver.MotorDriver@{motor\_driver.MotorDriver}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!motor\_driver.MotorDriver@{motor\_driver.MotorDriver}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def motor\+\_\+driver.\+Motor\+Driver.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{enable\+\_\+pin,  }\item[{}]{in1pin,  }\item[{}]{in2pin,  }\item[{}]{timer }\end{DoxyParamCaption})}
+
+
+
+Creates a motor driver by initializing GPIO pins and turns the motor off for safety. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em enable\+\_\+pin} & A pyb.\+Pin object that enables or disables the motor using the PULL\+\_\+\+UP mode. \\
+\hline
+{\em in1pin} & A pyb.\+Pin object that defines the pin to control motor channel 1. \\
+\hline
+{\em in1pin} & A pyb.\+Pin object that defines the pin to control motor channel 2. \\
+\hline
+{\em timer} & A pyb.\+Timer object with a set frequency and timer number. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmotor__driver_1_1_motor_driver_acb0425b4bb5e1bf751c45bc785165f69}\label{classmotor__driver_1_1_motor_driver_acb0425b4bb5e1bf751c45bc785165f69}} 
+\index{motor\_driver.MotorDriver@{motor\_driver.MotorDriver}!set\_pwm@{set\_pwm}}
+\index{set\_pwm@{set\_pwm}!motor\_driver.MotorDriver@{motor\_driver.MotorDriver}}
+\doxysubsubsection{\texorpdfstring{set\_pwm()}{set\_pwm()}}
+{\footnotesize\ttfamily def motor\+\_\+driver.\+Motor\+Driver.\+set\+\_\+pwm (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{duty\+\_\+cycle }\end{DoxyParamCaption})}
+
+
+
+Sets the duty cycle and direction of the motor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em duty\+\_\+cycle} & A numeric value between -\/100 and 100 to define the duty cycle of the motor. Positive is clockwise. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{motor__driver_8py}{motor\+\_\+driver.\+py}}\end{DoxyCompactItemize}

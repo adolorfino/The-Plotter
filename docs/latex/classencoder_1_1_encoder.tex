@@ -1,0 +1,190 @@
+\hypertarget{classencoder_1_1_encoder}{}\doxysection{encoder.\+Encoder Class Reference}
+\label{classencoder_1_1_encoder}\index{encoder.Encoder@{encoder.Encoder}}
+
+
+Interface with quadrature encoders.  
+
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_ae434aff89f64fcaf5f847c2b1eaa31ab}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, tim\+Num, pin1, pin2)
+\begin{DoxyCompactList}\small\item\em Constructs an encoder object. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_aa1c1535160682500f5214f45d8197027}{read}} (self)
+\begin{DoxyCompactList}\small\item\em Gets encoder timer ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_ae238ecdbcbce8a193c2e0ffbb4d1dd29}{zero}} (self)
+\begin{DoxyCompactList}\small\item\em Gets encoder timer ~\newline
+ \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_a94b3e3878bc94c8c98f51f88b4de6c4c}{update}} (self)
+\begin{DoxyCompactList}\small\item\em Updates encoder position and delta. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_abc44b0bb3d2ee93571f00d6bab5e7c53}{get\+\_\+position}} (self)
+\begin{DoxyCompactList}\small\item\em Returns encoder position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_a097746ac59abf28e6567f5604fe83c1f}{set\+\_\+position}} (self, position)
+\begin{DoxyCompactList}\small\item\em Sets encoder position. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_a2f451b6cb3e85e03d45e0ac097e29a29}{get\+\_\+delta}} (self)
+\begin{DoxyCompactList}\small\item\em Returns encoder delta. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{classencoder_1_1_encoder_a1a6b2cdec583d3c2e633d0c46e463a6a}{get\+\_\+velocity}} (self)
+\begin{DoxyCompactList}\small\item\em Returns velocity calculated in the \char`\"{}\+Update\char`\"{} function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_ac9894e8729eb9fcba857cbe5044ec781}\label{classencoder_1_1_encoder_ac9894e8729eb9fcba857cbe5044ec781}} 
+{\bfseries datum\+Position}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_a90d9ff61e843b6bc70526877da34a424}\label{classencoder_1_1_encoder_a90d9ff61e843b6bc70526877da34a424}} 
+{\bfseries old\+\_\+counter}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_ad017c0a5f382fe0dac6ed8920ce90635}\label{classencoder_1_1_encoder_ad017c0a5f382fe0dac6ed8920ce90635}} 
+{\bfseries delta}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_acf631fe16ee0ff17b07080430452d972}\label{classencoder_1_1_encoder_acf631fe16ee0ff17b07080430452d972}} 
+{\bfseries count}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_a9c15eb087b5869c188cf94e53ea3b4f5}\label{classencoder_1_1_encoder_a9c15eb087b5869c188cf94e53ea3b4f5}} 
+{\bfseries position}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_adbcca8d0d73e0ed111f4767b8656c805}\label{classencoder_1_1_encoder_adbcca8d0d73e0ed111f4767b8656c805}} 
+{\bfseries cap}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_a7f883b397ea976de77ddac813496693f}\label{classencoder_1_1_encoder_a7f883b397ea976de77ddac813496693f}} 
+{\bfseries old\+Delta}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_a29b85ae933bc77536e262671a05af017}\label{classencoder_1_1_encoder_a29b85ae933bc77536e262671a05af017}} 
+{\bfseries time\+\_\+last}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_a6d34277d78f0f528aeb8b4d8901356b7}\label{classencoder_1_1_encoder_a6d34277d78f0f528aeb8b4d8901356b7}} 
+{\bfseries tim}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_aab07af15bd480f2e6ee2dc143adb0cdc}\label{classencoder_1_1_encoder_aab07af15bd480f2e6ee2dc143adb0cdc}} 
+{\bfseries time\+\_\+now}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_a97bfba522ca6f1ccba698dbef3b02ef8}\label{classencoder_1_1_encoder_a97bfba522ca6f1ccba698dbef3b02ef8}} 
+{\bfseries time\+\_\+diff}
+\item 
+\mbox{\Hypertarget{classencoder_1_1_encoder_a3183466a3fb63d540c929414e1f18d92}\label{classencoder_1_1_encoder_a3183466a3fb63d540c929414e1f18d92}} 
+{\bfseries velocity}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface with quadrature encoders. 
+
+Creates a class for the encoder to call encoder position, change in encoder position, and datums the motor. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classencoder_1_1_encoder_ae434aff89f64fcaf5f847c2b1eaa31ab}\label{classencoder_1_1_encoder_ae434aff89f64fcaf5f847c2b1eaa31ab}} 
+\index{encoder.Encoder@{encoder.Encoder}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{tim\+Num,  }\item[{}]{pin1,  }\item[{}]{pin2 }\end{DoxyParamCaption})}
+
+
+
+Constructs an encoder object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tim\+Num} & Corresponds to the timer channel that the encoder is connected to. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classencoder_1_1_encoder_a2f451b6cb3e85e03d45e0ac097e29a29}\label{classencoder_1_1_encoder_a2f451b6cb3e85e03d45e0ac097e29a29}} 
+\index{encoder.Encoder@{encoder.Encoder}!get\_delta@{get\_delta}}
+\index{get\_delta@{get\_delta}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{get\_delta()}{get\_delta()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+get\+\_\+delta (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns encoder delta. 
+
+\begin{DoxyReturn}{Returns}
+The change in position of the encoder shaft between the two most recent updates 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classencoder_1_1_encoder_abc44b0bb3d2ee93571f00d6bab5e7c53}\label{classencoder_1_1_encoder_abc44b0bb3d2ee93571f00d6bab5e7c53}} 
+\index{encoder.Encoder@{encoder.Encoder}!get\_position@{get\_position}}
+\index{get\_position@{get\_position}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{get\_position()}{get\_position()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+get\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns encoder position. 
+
+\begin{DoxyReturn}{Returns}
+The position of the encoder shaft 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classencoder_1_1_encoder_a1a6b2cdec583d3c2e633d0c46e463a6a}\label{classencoder_1_1_encoder_a1a6b2cdec583d3c2e633d0c46e463a6a}} 
+\index{encoder.Encoder@{encoder.Encoder}!get\_velocity@{get\_velocity}}
+\index{get\_velocity@{get\_velocity}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{get\_velocity()}{get\_velocity()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+get\+\_\+velocity (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Returns velocity calculated in the \char`\"{}\+Update\char`\"{} function. 
+
+\begin{DoxyReturn}{Returns}
+The angular velocity in 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classencoder_1_1_encoder_aa1c1535160682500f5214f45d8197027}\label{classencoder_1_1_encoder_aa1c1535160682500f5214f45d8197027}} 
+\index{encoder.Encoder@{encoder.Encoder}!read@{read}}
+\index{read@{read}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{read()}{read()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+read (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Gets encoder timer ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+The value of the timer encoder 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classencoder_1_1_encoder_a097746ac59abf28e6567f5604fe83c1f}\label{classencoder_1_1_encoder_a097746ac59abf28e6567f5604fe83c1f}} 
+\index{encoder.Encoder@{encoder.Encoder}!set\_position@{set\_position}}
+\index{set\_position@{set\_position}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{set\_position()}{set\_position()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+set\+\_\+position (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{position }\end{DoxyParamCaption})}
+
+
+
+Sets encoder position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The new position of the encoder shaft \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classencoder_1_1_encoder_a94b3e3878bc94c8c98f51f88b4de6c4c}\label{classencoder_1_1_encoder_a94b3e3878bc94c8c98f51f88b4de6c4c}} 
+\index{encoder.Encoder@{encoder.Encoder}!update@{update}}
+\index{update@{update}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+update (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Updates encoder position and delta. 
+
+Updates the encoder postion,delta, and handles the enconter over and underflow. \mbox{\Hypertarget{classencoder_1_1_encoder_ae238ecdbcbce8a193c2e0ffbb4d1dd29}\label{classencoder_1_1_encoder_ae238ecdbcbce8a193c2e0ffbb4d1dd29}} 
+\index{encoder.Encoder@{encoder.Encoder}!zero@{zero}}
+\index{zero@{zero}!encoder.Encoder@{encoder.Encoder}}
+\doxysubsubsection{\texorpdfstring{zero()}{zero()}}
+{\footnotesize\ttfamily def encoder.\+Encoder.\+zero (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Gets encoder timer ~\newline
+ 
+
+\begin{DoxyReturn}{Returns}
+The value of the timer encoder 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{encoder_8py}{encoder.\+py}}\end{DoxyCompactItemize}

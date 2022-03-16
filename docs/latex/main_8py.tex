@@ -1,0 +1,295 @@
+\hypertarget{main_8py}{}\doxysection{src/main.py File Reference}
+\label{main_8py}\index{src/main.py@{src/main.py}}
+
+
+This file is the overarching program that controls the plotter.  
+
+
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8py_a32635a29e04e95ad9e6553196a4b0cfc}\label{main_8py_a32635a29e04e95ad9e6553196a4b0cfc}} 
+def {\bfseries main.\+task1\+\_\+encoder1} ()
+\begin{DoxyCompactList}\small\item\em Generator task which controls Encoder 1 on the plotter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_a13c2247e9fafae9c553ff75a1d7a1e42}\label{main_8py_a13c2247e9fafae9c553ff75a1d7a1e42}} 
+def {\bfseries main.\+task2\+\_\+motor1} ()
+\begin{DoxyCompactList}\small\item\em Generator task which controls Motor 1 on the plotter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_afd75c6a5a8af2358ba45cadea26c6bae}\label{main_8py_afd75c6a5a8af2358ba45cadea26c6bae}} 
+def {\bfseries main.\+task3\+\_\+controller1} ()
+\begin{DoxyCompactList}\small\item\em Generator task which runs a closed loop calculation to return values for Encoder 1 and determine necessary position or velocity on the plotter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_afe70c7c500da0f7b220e1e8845acb09d}\label{main_8py_afe70c7c500da0f7b220e1e8845acb09d}} 
+def {\bfseries main.\+task4\+\_\+read} ()
+\begin{DoxyCompactList}\small\item\em An assigned task that ultimately did not get used. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_a6058b67e59a56633da5167007115ed59}\label{main_8py_a6058b67e59a56633da5167007115ed59}} 
+def {\bfseries main.\+task5\+\_\+setcoords} ()
+\begin{DoxyCompactList}\small\item\em A generator task to update the r and theta destination coordinates for both motors to follow. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_a95895d93ba9693fc506658a1f76488fc}\label{main_8py_a95895d93ba9693fc506658a1f76488fc}} 
+def {\bfseries main.\+task6\+\_\+encoder2} ()
+\begin{DoxyCompactList}\small\item\em Generator task which controls Encoder 2 on the plotter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_abb82c1116b1335fc6f8bb16b005eff5a}\label{main_8py_abb82c1116b1335fc6f8bb16b005eff5a}} 
+def {\bfseries main.\+task7\+\_\+motor2} ()
+\begin{DoxyCompactList}\small\item\em Generator task which controls Encoder 2 on the plotter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{main_8py_a1e7153b4925e35a5ebabbef875209b41}\label{main_8py_a1e7153b4925e35a5ebabbef875209b41}} 
+def {\bfseries main.\+task8\+\_\+controller2} ()
+\begin{DoxyCompactList}\small\item\em Generator task which runs a closed loop calculation to return values for Encoder 2 and determine necessary position or velocity on the plotter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{main_8py_a5854bd125b139389df502649ad7b0c9c}\label{main_8py_a5854bd125b139389df502649ad7b0c9c}} 
+{\bfseries main.\+vcp} = USB\+\_\+\+VCP()
+\item 
+\mbox{\Hypertarget{main_8py_a0399d5efdc0a61240ac0e76e279df731}\label{main_8py_a0399d5efdc0a61240ac0e76e279df731}} 
+list {\bfseries main.\+coords} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8py_a0081f5d055911aac5c96f10b07a3111a}\label{main_8py_a0081f5d055911aac5c96f10b07a3111a}} 
+list {\bfseries main.\+coords2} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8py_a9960a68cc2e0af2954d3d87dc36278f1}\label{main_8py_a9960a68cc2e0af2954d3d87dc36278f1}} 
+list {\bfseries main.\+pen\+\_\+move} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8py_af66a9649d98bf2b46943f018ea823880}\label{main_8py_af66a9649d98bf2b46943f018ea823880}} 
+{\bfseries main.\+S\+\_\+velocity1} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}} (\textquotesingle{}l\textquotesingle{}, thread\+\_\+protect = False, name = \char`\"{}S\+\_\+velocity1\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_a6aa9bdfbc99e22a8817863fddda4128a}\label{main_8py_a6aa9bdfbc99e22a8817863fddda4128a}} 
+{\bfseries main.\+S\+\_\+position1} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}} (\textquotesingle{}l\textquotesingle{}, thread\+\_\+protect = False, name = \char`\"{}S\+\_\+position1\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_aae42493c6f1e3455d58f8f1de539a702}\label{main_8py_aae42493c6f1e3455d58f8f1de539a702}} 
+{\bfseries main.\+S\+\_\+duty1} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}}(\textquotesingle{}f\textquotesingle{}, thread\+\_\+protect = False, name = \char`\"{}S\+\_\+duty1\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_ac6f182d82fd3f44d9960f0aea3104897}\label{main_8py_ac6f182d82fd3f44d9960f0aea3104897}} 
+{\bfseries main.\+S\+\_\+velocity2} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}} (\textquotesingle{}l\textquotesingle{}, thread\+\_\+protect = False, name = \char`\"{}S\+\_\+velocity2\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_a4ca0c41c1a8cef45cf99d6109932c23d}\label{main_8py_a4ca0c41c1a8cef45cf99d6109932c23d}} 
+{\bfseries main.\+S\+\_\+position2} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}} (\textquotesingle{}l\textquotesingle{}, thread\+\_\+protect = False, name = \char`\"{}S\+\_\+position2\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_a6021e53b463d5b3f2978665088ae97da}\label{main_8py_a6021e53b463d5b3f2978665088ae97da}} 
+{\bfseries main.\+S\+\_\+duty2} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}}(\textquotesingle{}f\textquotesingle{}, thread\+\_\+protect = False, name = \char`\"{}S\+\_\+duty2\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_aaa809b5354239b8ab41d5124f3ccaada}\label{main_8py_aaa809b5354239b8ab41d5124f3ccaada}} 
+{\bfseries main.\+S\+\_\+\+Flag\+\_\+1} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}}(\textquotesingle{}h\textquotesingle{}, thread\+\_\+protect = False, name = \textquotesingle{}S\+\_\+\+Flag\+\_\+1\textquotesingle{})
+\item 
+\mbox{\Hypertarget{main_8py_ad9ba14bc5589e981906ebce67cdad441}\label{main_8py_ad9ba14bc5589e981906ebce67cdad441}} 
+{\bfseries main.\+S\+\_\+\+Flag\+\_\+2} = \mbox{\hyperlink{classtask__share_1_1_share}{task\+\_\+share.\+Share}}(\textquotesingle{}h\textquotesingle{}, thread\+\_\+protect = False, name = \textquotesingle{}S\+\_\+\+Flag\+\_\+2\textquotesingle{})
+\item 
+\mbox{\Hypertarget{main_8py_a1df362e9051efb305e96a735f8ab1bf7}\label{main_8py_a1df362e9051efb305e96a735f8ab1bf7}} 
+{\bfseries main.\+Q\+\_\+r} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}f\textquotesingle{}, 1000, thread\+\_\+protect = False, name = \char`\"{}Q\+\_\+r\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_a1dc455cade62be3e58cdd5b7f9ebad1e}\label{main_8py_a1dc455cade62be3e58cdd5b7f9ebad1e}} 
+{\bfseries main.\+Q\+\_\+th} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}f\textquotesingle{}, 1000, thread\+\_\+protect = False, name = \char`\"{}Q\+\_\+th\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_ace109efdec41c91027e293878b10e227}\label{main_8py_ace109efdec41c91027e293878b10e227}} 
+{\bfseries main.\+Q\+\_\+x} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}l\textquotesingle{}, 1000, thread\+\_\+protect = False, name = \char`\"{}Q\+\_\+x\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_aab3e1880efc73a29decd006765002e21}\label{main_8py_aab3e1880efc73a29decd006765002e21}} 
+{\bfseries main.\+Q\+\_\+y} = \mbox{\hyperlink{classtask__share_1_1_queue}{task\+\_\+share.\+Queue}}(\textquotesingle{}l\textquotesingle{}, 1000, thread\+\_\+protect = False, name = \char`\"{}Q\+\_\+y\char`\"{})
+\item 
+\mbox{\Hypertarget{main_8py_a20f1a609b93115b8a35c6811ebb6c156}\label{main_8py_a20f1a609b93115b8a35c6811ebb6c156}} 
+{\bfseries main.\+hpgl} = my\+\_\+file.\+read()
+\item 
+\mbox{\Hypertarget{main_8py_aea9e6244774d4c50d35c2b40b8413bde}\label{main_8py_aea9e6244774d4c50d35c2b40b8413bde}} 
+{\bfseries main.\+commands} = hpgl.\+split(\textquotesingle{};\textquotesingle{})
+\item 
+\mbox{\Hypertarget{main_8py_ab6f53bc15c3b7226f6646c6a68fb4903}\label{main_8py_ab6f53bc15c3b7226f6646c6a68fb4903}} 
+list {\bfseries main.\+commands2} = \mbox{[}$\,$\mbox{]}
+\item 
+\mbox{\Hypertarget{main_8py_a8d0ba881437a2961f4db2ed1734f7f21}\label{main_8py_a8d0ba881437a2961f4db2ed1734f7f21}} 
+int {\bfseries main.\+counter} = 0
+\item 
+\mbox{\Hypertarget{main_8py_a5b5b522988f4d181322c4e95ae2bb1e8}\label{main_8py_a5b5b522988f4d181322c4e95ae2bb1e8}} 
+list {\bfseries main.\+data} = commands2\mbox{[}n\mbox{]}.split(\textquotesingle{},\textquotesingle{})
+\item 
+\mbox{\Hypertarget{main_8py_a5d7182ad918e2fbb84cef120fa48bd71}\label{main_8py_a5d7182ad918e2fbb84cef120fa48bd71}} 
+int {\bfseries main.\+x} = float(Q\+\_\+x.\+get())/1016
+\item 
+\mbox{\Hypertarget{main_8py_ad7e39fb0dcc9c0c1c721900e56c94f30}\label{main_8py_ad7e39fb0dcc9c0c1c721900e56c94f30}} 
+int {\bfseries main.\+y} = float(Q\+\_\+y.\+get())/1016
+\item 
+\mbox{\Hypertarget{main_8py_ab3a365b29ed156b63264217ab8cdcd34}\label{main_8py_ab3a365b29ed156b63264217ab8cdcd34}} 
+tuple {\bfseries main.\+r} = ((x$\ast$$\ast$2 + y$\ast$$\ast$2)$\ast$$\ast$0.\+5)$\ast$165864/8
+\item 
+\mbox{\Hypertarget{main_8py_aefbbc9d91f4055d0919b70ebc7a9824c}\label{main_8py_aefbbc9d91f4055d0919b70ebc7a9824c}} 
+{\bfseries main.\+th} = round(math.\+atan(y/x)$\ast$180/math.\+pi)$\ast$(12250/90)
+\item 
+\mbox{\Hypertarget{main_8py_ae62cc90753dded38c26c35cb8e220646}\label{main_8py_ae62cc90753dded38c26c35cb8e220646}} 
+{\bfseries main.\+m1\+\_\+pin\+\_\+1} = pyb.\+Pin.\+board.\+PB4
+\item 
+\mbox{\Hypertarget{main_8py_a24c72f31ab19f4f695f4741fdda70257}\label{main_8py_a24c72f31ab19f4f695f4741fdda70257}} 
+{\bfseries main.\+m1\+\_\+pin\+\_\+2} = pyb.\+Pin.\+board.\+PB5
+\item 
+\mbox{\Hypertarget{main_8py_a90a6b4b74d24f9ac1c93392a89209d1d}\label{main_8py_a90a6b4b74d24f9ac1c93392a89209d1d}} 
+{\bfseries main.\+m1\+\_\+enable} = pyb.\+Pin.\+board.\+PA10
+\item 
+\mbox{\Hypertarget{main_8py_a3024c02847e356e1010d9a1812149c86}\label{main_8py_a3024c02847e356e1010d9a1812149c86}} 
+{\bfseries main.\+m1\+\_\+timer} = pyb.\+Timer(3, freq = 20000)
+\item 
+\mbox{\Hypertarget{main_8py_a3a2f088acede9b226beb08b70c42f146}\label{main_8py_a3a2f088acede9b226beb08b70c42f146}} 
+{\bfseries main.\+motor1} = \mbox{\hyperlink{classmotor__driver_1_1_motor_driver}{motor\+\_\+driver.\+Motor\+Driver}}(m1\+\_\+enable, m1\+\_\+pin\+\_\+1, m1\+\_\+pin\+\_\+2, m1\+\_\+timer)
+\item 
+\mbox{\Hypertarget{main_8py_ab15609da6b51950b16cb3d584c2fca30}\label{main_8py_ab15609da6b51950b16cb3d584c2fca30}} 
+{\bfseries main.\+m2\+\_\+pin\+\_\+1} = pyb.\+Pin.\+board.\+PA0
+\item 
+\mbox{\Hypertarget{main_8py_a6b9149a84f2eceeb437c8249131f8098}\label{main_8py_a6b9149a84f2eceeb437c8249131f8098}} 
+{\bfseries main.\+m2\+\_\+pin\+\_\+2} = pyb.\+Pin.\+board.\+PA1
+\item 
+\mbox{\Hypertarget{main_8py_a1a7be9b2b4e2fe61d15325fb65a83962}\label{main_8py_a1a7be9b2b4e2fe61d15325fb65a83962}} 
+{\bfseries main.\+m2\+\_\+enable} = pyb.\+Pin.\+board.\+PC1
+\item 
+\mbox{\Hypertarget{main_8py_a97a337cec92c31bf2248aa0773adfb68}\label{main_8py_a97a337cec92c31bf2248aa0773adfb68}} 
+{\bfseries main.\+m2\+\_\+timer} = pyb.\+Timer(5, freq = 20000)
+\item 
+\mbox{\Hypertarget{main_8py_a1a2262732e6726079ffed3e075851a70}\label{main_8py_a1a2262732e6726079ffed3e075851a70}} 
+{\bfseries main.\+motor2} = \mbox{\hyperlink{classmotor__driver_1_1_motor_driver}{motor\+\_\+driver.\+Motor\+Driver}}(m2\+\_\+enable, m2\+\_\+pin\+\_\+1, m2\+\_\+pin\+\_\+2, m2\+\_\+timer)
+\item 
+\mbox{\Hypertarget{main_8py_a84fe850897df13d8875e7baab3723745}\label{main_8py_a84fe850897df13d8875e7baab3723745}} 
+{\bfseries main.\+e1\+\_\+pin\+\_\+1} = pyb.\+Pin.\+cpu.\+B6
+\item 
+\mbox{\Hypertarget{main_8py_aff0608219c72d4db4300d40d2842268c}\label{main_8py_aff0608219c72d4db4300d40d2842268c}} 
+{\bfseries main.\+e1\+\_\+pin\+\_\+2} = pyb.\+Pin.\+cpu.\+B7
+\item 
+\mbox{\Hypertarget{main_8py_acc321fcf40ee500a421bb6521bf8db06}\label{main_8py_acc321fcf40ee500a421bb6521bf8db06}} 
+int {\bfseries main.\+e1\+\_\+channel} = 4
+\item 
+\mbox{\Hypertarget{main_8py_a819f7b5adea17ca474c9de7b6e6d461f}\label{main_8py_a819f7b5adea17ca474c9de7b6e6d461f}} 
+{\bfseries main.\+enc\+\_\+1} = \mbox{\hyperlink{classencoder_1_1_encoder}{encoder.\+Encoder}}(e1\+\_\+channel, e1\+\_\+pin\+\_\+1, e1\+\_\+pin\+\_\+2)
+\item 
+\mbox{\Hypertarget{main_8py_ab90ca37a93031f677d3e9333d8a078fc}\label{main_8py_ab90ca37a93031f677d3e9333d8a078fc}} 
+{\bfseries main.\+e2\+\_\+pin\+\_\+1} = pyb.\+Pin.\+cpu.\+C6
+\item 
+\mbox{\Hypertarget{main_8py_a672764b30522b8e5aafa1c12e800eb47}\label{main_8py_a672764b30522b8e5aafa1c12e800eb47}} 
+{\bfseries main.\+e2\+\_\+pin\+\_\+2} = pyb.\+Pin.\+cpu.\+C7
+\item 
+\mbox{\Hypertarget{main_8py_a17eaf5524bb4c13d77b4f9511739d782}\label{main_8py_a17eaf5524bb4c13d77b4f9511739d782}} 
+int {\bfseries main.\+e2\+\_\+channel} = 8
+\item 
+\mbox{\Hypertarget{main_8py_a48c70bdc4ac8ee2a90edfbd4a2a50788}\label{main_8py_a48c70bdc4ac8ee2a90edfbd4a2a50788}} 
+{\bfseries main.\+enc\+\_\+2} = \mbox{\hyperlink{classencoder_1_1_encoder}{encoder.\+Encoder}}(e2\+\_\+channel, e2\+\_\+pin\+\_\+1, e2\+\_\+pin\+\_\+2)
+\item 
+\mbox{\Hypertarget{main_8py_a804494a357139d78e7983b154b86e37b}\label{main_8py_a804494a357139d78e7983b154b86e37b}} 
+{\bfseries main.\+controller1} = \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop}{Closed\+Loop\+VC.\+Closed\+Loop}}(0,0,200,0,0.\+05, 0.\+4)
+\item 
+\mbox{\Hypertarget{main_8py_a38ecdd8a36eaa9d9783ae520c342924f}\label{main_8py_a38ecdd8a36eaa9d9783ae520c342924f}} 
+{\bfseries main.\+controller2} = \mbox{\hyperlink{class_closed_loop_v_c_1_1_closed_loop}{Closed\+Loop\+VC.\+Closed\+Loop}}(0,0,150,0,0.\+05, 0.\+3)
+\item 
+\mbox{\hyperlink{main_8py_af4b8f4290f8d32e70654f6deb864787f}{main.\+task1}}
+\item 
+\mbox{\hyperlink{main_8py_a99d189b8f9eb3784cf7d4e5c3241b562}{main.\+task2}}
+\item 
+\mbox{\hyperlink{main_8py_a120516a5d42c212c898d4616d266077a}{main.\+task3}}
+\item 
+\mbox{\hyperlink{main_8py_a11ec9e490c402876467b9fdadecc93e8}{main.\+task5}}
+\item 
+\mbox{\hyperlink{main_8py_a4ff32207e9201d99684e38af7bee4d5d}{main.\+task6}}
+\item 
+\mbox{\hyperlink{main_8py_aebef59d830c2aef562d9b0f73bb4c0b3}{main.\+task7}}
+\item 
+\mbox{\hyperlink{main_8py_afebbdaf4ea6b66c789a7221ce2b6de1a}{main.\+task8}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file is the overarching program that controls the plotter. 
+
+In this file are different tasks set up to perform the different duties in the motor, run and shared through the cotasks file. The tasks created are encoders, controllers, and motor drivers. This file was created from a previous file made by professor JR Ridgely and modified for the purpose of this lab.
+
+\begin{DoxyAuthor}{Author}
+Aleya Dolorfino 
+
+Chloe Chou 
+
+Christian Roberts 
+
+JR Ridgely
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2022-\/03-\/15 Updated template from basictasks.\+py, created by JR Ridgely. 
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+(c) 2015-\/2021 by JR Ridgely and released under the GNU Public License, Version 2. 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8py_af4b8f4290f8d32e70654f6deb864787f}\label{main_8py_af4b8f4290f8d32e70654f6deb864787f}} 
+\index{main.py@{main.py}!task1@{task1}}
+\index{task1@{task1}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{task1}{task1}}
+{\footnotesize\ttfamily main.\+task1}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \mbox{\hyperlink{classcotask_1_1_task}{cotask.Task}} (task1\_encoder1, name = \textcolor{stringliteral}{'Task\_1'}, priority = 1, }
+\DoxyCodeLine{2                          period = 30, profile = \textcolor{keyword}{True}, trace = \textcolor{keyword}{False})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8py_a99d189b8f9eb3784cf7d4e5c3241b562}\label{main_8py_a99d189b8f9eb3784cf7d4e5c3241b562}} 
+\index{main.py@{main.py}!task2@{task2}}
+\index{task2@{task2}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{task2}{task2}}
+{\footnotesize\ttfamily main.\+task2}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \mbox{\hyperlink{classcotask_1_1_task}{cotask.Task}} (task2\_motor1, name = \textcolor{stringliteral}{'Task\_2'}, priority = 3, }
+\DoxyCodeLine{2                          period = 50, profile = \textcolor{keyword}{True}, trace = \textcolor{keyword}{False})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8py_a120516a5d42c212c898d4616d266077a}\label{main_8py_a120516a5d42c212c898d4616d266077a}} 
+\index{main.py@{main.py}!task3@{task3}}
+\index{task3@{task3}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{task3}{task3}}
+{\footnotesize\ttfamily main.\+task3}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \mbox{\hyperlink{classcotask_1_1_task}{cotask.Task}} (task3\_controller1, name = \textcolor{stringliteral}{'Task\_3'}, priority = 2, }
+\DoxyCodeLine{2                          period = 30, profile = \textcolor{keyword}{True}, trace = \textcolor{keyword}{False})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8py_a11ec9e490c402876467b9fdadecc93e8}\label{main_8py_a11ec9e490c402876467b9fdadecc93e8}} 
+\index{main.py@{main.py}!task5@{task5}}
+\index{task5@{task5}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{task5}{task5}}
+{\footnotesize\ttfamily main.\+task5}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \mbox{\hyperlink{classcotask_1_1_task}{cotask.Task}} (task5\_setcoords, name = \textcolor{stringliteral}{'Task\_5'}, priority = 1,}
+\DoxyCodeLine{2                          period = 120, profile = \textcolor{keyword}{True}, trace = \textcolor{keyword}{False})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8py_a4ff32207e9201d99684e38af7bee4d5d}\label{main_8py_a4ff32207e9201d99684e38af7bee4d5d}} 
+\index{main.py@{main.py}!task6@{task6}}
+\index{task6@{task6}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{task6}{task6}}
+{\footnotesize\ttfamily main.\+task6}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \mbox{\hyperlink{classcotask_1_1_task}{cotask.Task}} (task6\_encoder2, name = \textcolor{stringliteral}{'Task\_6'}, priority = 1, }
+\DoxyCodeLine{2                          period = 30, profile = \textcolor{keyword}{True}, trace = \textcolor{keyword}{False})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8py_aebef59d830c2aef562d9b0f73bb4c0b3}\label{main_8py_aebef59d830c2aef562d9b0f73bb4c0b3}} 
+\index{main.py@{main.py}!task7@{task7}}
+\index{task7@{task7}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{task7}{task7}}
+{\footnotesize\ttfamily main.\+task7}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \mbox{\hyperlink{classcotask_1_1_task}{cotask.Task}} (task7\_motor2, name = \textcolor{stringliteral}{'Task\_7'}, priority = 3, }
+\DoxyCodeLine{2                          period = 50, profile = \textcolor{keyword}{True}, trace = \textcolor{keyword}{False})}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{main_8py_afebbdaf4ea6b66c789a7221ce2b6de1a}\label{main_8py_afebbdaf4ea6b66c789a7221ce2b6de1a}} 
+\index{main.py@{main.py}!task8@{task8}}
+\index{task8@{task8}!main.py@{main.py}}
+\doxysubsubsection{\texorpdfstring{task8}{task8}}
+{\footnotesize\ttfamily main.\+task8}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 =  \mbox{\hyperlink{classcotask_1_1_task}{cotask.Task}} (task8\_controller2, name = \textcolor{stringliteral}{'Task\_8'}, priority = 2, }
+\DoxyCodeLine{2                          period = 30, profile = \textcolor{keyword}{True}, trace = \textcolor{keyword}{False})}
+
+\end{DoxyCode}
